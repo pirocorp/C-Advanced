@@ -1,2 +1,1 @@
-# C-Advanced
-C# Advanced from SoftUni
+# Software-Technologies
