@@ -12,8 +12,6 @@
             var queueGenerated = new Queue<long>();
             var queueFinal = new Queue<long>();
 
-            var sum = 0;
-
             var elementX = n;
             queueGenerated.Enqueue(elementX);
 
