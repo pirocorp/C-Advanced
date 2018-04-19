@@ -18,6 +18,7 @@
                 .ToArray();
 
             var plants = new List<int>(numberOfPlants);
+            //Console.WriteLine(string.Join(", ", plants));
 
             for (var i = 0; i < numberOfPlants; i++)
             {
@@ -30,6 +31,7 @@
             {
                 var currentPlants = plants;
                 plants = SepareteDeathFromAlivePlants(currentPlants);
+                
 
                 if (plants.Count >= currentPlants.Count)
                 {
@@ -37,6 +39,7 @@
                 }
 
                 count++;
+                //Console.WriteLine($"{string.Join(", ", plants)} -> Day: {count}");
             }
 
             Console.WriteLine(count);
@@ -53,7 +56,7 @@
                 var previusPlant = currentPlants[i - 1];
                 var crrentPlant = currentPlants[i];
 
-                if (crrentPlant < previusPlant)
+                if (crrentPlant <= previusPlant)
                 {
                     alivePlants.Add(crrentPlant);
                 }
