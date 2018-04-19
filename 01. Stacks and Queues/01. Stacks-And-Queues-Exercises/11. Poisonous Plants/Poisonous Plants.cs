@@ -3,8 +3,6 @@
     using System;
     using System.Collections.Generic;
     using System.Linq;
-    using System.Text;
-    using System.Threading.Tasks;
 
     public class PoisonousPlants
     {
@@ -12,18 +10,10 @@
         {
             var numberOfPlants = int.Parse(Console.ReadLine());
 
-            var plantsInput = Console.ReadLine()
+            var plants = Console.ReadLine()
                 .Split(new[] {' '}, StringSplitOptions.RemoveEmptyEntries)
                 .Select(int.Parse)
-                .ToArray();
-
-            var plants = new List<int>(numberOfPlants);
-            //Console.WriteLine(string.Join(", ", plants));
-
-            for (var i = 0; i < numberOfPlants; i++)
-            {
-                plants.Add(plantsInput[i]);
-            }
+                .ToList();
 
             var count = 0;
 
