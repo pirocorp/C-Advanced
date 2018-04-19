@@ -11,48 +11,33 @@
             var numberOfPlants = int.Parse(Console.ReadLine());
 
             var plants = Console.ReadLine()
-                .Split(new[] {' '}, StringSplitOptions.RemoveEmptyEntries)
+                .Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries)
                 .Select(int.Parse)
-                .ToList();
+                .ToArray();
 
-            var count = 0;
+            var days = new int[plants.Length];
 
-            while (true)
+            var indexOfPlants = new Stack<int>();
+            indexOfPlants.Push(0);
+
+            for (var i = 1; i < plants.Length; i++)
             {
-                var currentPlants = plants;
-                plants = SepareteDeathFromAlivePlants(currentPlants);
-                
+                var maxDays = 0;
 
-                if (plants.Count >= currentPlants.Count)
+                while (indexOfPlants.Count > 0 && plants[indexOfPlants.Peek()] >= plants[i])
                 {
-                    break;
+                    maxDays = Math.Max(days[indexOfPlants.Pop()], maxDays);
                 }
 
-                count++;
-                //Console.WriteLine($"{string.Join(", ", plants)} -> Day: {count}");
-            }
-
-            Console.WriteLine(count);
-        }
-
-        private static List<int> SepareteDeathFromAlivePlants(List<int> currentPlants)
-        {
-            var alivePlants = new List<int>();
-
-            alivePlants.Add(currentPlants[0]);
-
-            for (var i = 1; i < currentPlants.Count; i++)
-            {
-                var previusPlant = currentPlants[i - 1];
-                var crrentPlant = currentPlants[i];
-
-                if (crrentPlant <= previusPlant)
+                if (indexOfPlants.Count > 0)
                 {
-                    alivePlants.Add(crrentPlant);
+                    days[i] = maxDays + 1;
                 }
+
+                indexOfPlants.Push(i);
             }
 
-            return alivePlants;
+            Console.WriteLine(days.Max());
         }
     }
 }
