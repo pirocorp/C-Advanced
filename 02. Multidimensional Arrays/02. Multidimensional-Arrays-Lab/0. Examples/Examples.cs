@@ -16,7 +16,26 @@
 
             //HardCodeMatrix();
 
+            //AnotherHardCode();
 
+
+        }
+
+        private static void AnotherHardCode()
+        {
+            int[][] matrix =
+            {
+                new []{1, 2, 3, 4},
+                new []{5, 6, 7, 8}
+            };
+
+            for (var row = 0; row < matrix.Length; row++)
+            {
+                var currentRow = matrix[row];
+                var strings = currentRow.ToList().ConvertAll(input => $"{input:D3}").ToArray();
+
+                Console.WriteLine(string.Join(", ", strings));
+            }
         }
 
         private static void HardCodeMatrix()
