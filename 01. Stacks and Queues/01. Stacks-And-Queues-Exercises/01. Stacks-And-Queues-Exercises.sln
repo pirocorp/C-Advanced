@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05. Sequence With Queue", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06. Truck Tour", "06. Truck Tour\06. Truck Tour.csproj", "{1DAB50B3-180B-41BD-A39F-EF7052890908}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07. Balanced Parenthesis", "07. Balanced Parenthesis\07. Balanced Parenthesis.csproj", "{7973A57A-DC10-4115-8EA8-FC49850DB755}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{1DAB50B3-180B-41BD-A39F-EF7052890908}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1DAB50B3-180B-41BD-A39F-EF7052890908}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1DAB50B3-180B-41BD-A39F-EF7052890908}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7973A57A-DC10-4115-8EA8-FC49850DB755}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7973A57A-DC10-4115-8EA8-FC49850DB755}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7973A57A-DC10-4115-8EA8-FC49850DB755}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7973A57A-DC10-4115-8EA8-FC49850DB755}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
