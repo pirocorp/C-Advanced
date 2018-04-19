@@ -1,12 +1,8 @@
-﻿using System.Runtime.InteropServices;
-
-namespace _02.Basic_Stack_Operations
+﻿namespace _02.Basic_Stack_Operations
 {
     using System;
     using System.Collections.Generic;
     using System.Linq;
-    using System.Text;
-    using System.Threading.Tasks;
 
     public class BasicStackOperations
     {
