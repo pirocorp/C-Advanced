@@ -4,11 +4,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("01. Matrix of Palindromes")]
+[assembly: AssemblyTitle("02. Diagonal Difference")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("01. Matrix of Palindromes")]
+[assembly: AssemblyProduct("02. Diagonal Difference")]
 [assembly: AssemblyCopyright("Copyright ©  2018")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -19,7 +19,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("65cb536c-4672-4cd4-8c7e-1027fb66fc5b")]
+[assembly: Guid("f6388980-e30e-4675-924c-1febe4ae94f9")]
 
 // Version information for an assembly consists of the following four values:
 //
