@@ -1,11 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace _03.Group_Numbers
+﻿namespace _03.Group_Numbers
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+
     public class GroupNumbers
     {
         public static void Main()
