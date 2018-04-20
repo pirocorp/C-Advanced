@@ -3,8 +3,7 @@
     using System;
     using System.Collections.Generic;
     using System.Linq;
-    using System.Text;
-    using System.Threading.Tasks;
+    using System.Diagnostics;
 
     public class Examples
     {
@@ -18,15 +17,94 @@
 
             //AnotherHardCode();
 
+            //SpeedTest();
 
+            //SpeedTest2();
+
+        }
+
+        private static void SpeedTest2()
+        {
+            var inputMaxNumber = long.Parse(Console.ReadLine());
+
+            for (var i = 0L; i < inputMaxNumber; i++)
+            {
+                var startNumber = 1L;
+
+                for (var j = 0L; j <= i; j++)
+                {
+                    Console.Write(startNumber);
+                    Console.Write(" ");
+                    startNumber = startNumber * (i - j) / (j + 1L);
+                }
+
+                Console.WriteLine();
+            }
+        }
+
+        private static void SpeedTest()
+        {
+            int[] numbers = { 1, 4, 113, 55, 3, 1, 2, 66, 557, 124, 2 };
+
+            var watch = new Stopwatch();
+
+            watch.Start();
+
+            var lenght = numbers.Length;
+
+            var zero = new List<int>(lenght);
+            var one = new List<int>(lenght);
+            var two = new List<int>(lenght);
+
+            for (var i = 0; i < numbers.Length; i++)
+            {
+                if (numbers[i] % 3 == 0)
+                {
+                    zero.Add(numbers[i]);
+                }
+                else if (numbers[i] % 3 == 1)
+                {
+                    one.Add(numbers[i]);
+                }
+                else
+                {
+                    two.Add(numbers[i]);
+                }
+            }
+
+            for (var i = 0; i < zero.Count; i++)
+            {
+                Console.Write(zero[i] + " ");
+            }
+
+            Console.WriteLine();
+
+            for (var i = 0; i < one.Count; i++)
+            {
+                Console.Write(one[i] + " ");
+            }
+
+            Console.WriteLine();
+
+            for (var i = 0; i < two.Count; i++)
+            {
+                Console.Write(two[i] + " ");
+            }
+
+            Console.WriteLine();
+
+            watch.Stop();
+
+            Console.WriteLine(watch.ElapsedTicks);
+            Console.WriteLine(watch.Elapsed);
         }
 
         private static void AnotherHardCode()
         {
             int[][] matrix =
             {
-                new []{1, 2, 3, 4},
-                new []{5, 6, 7, 8}
+                new []{1, 2, 3, 4}, // row 0 values
+                new []{5, 6, 7, 8}  // row 1 values
             };
 
             for (var row = 0; row < matrix.Length; row++)
