@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{343329BF-6016-48F2-A995-2D1815D798D7}</ProjectGuid>
+    <ProjectGuid>{B5396434-E1D6-4D74-AAFB-4C6DCCB5091C}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>_03.Group_Numbers</RootNamespace>
-    <AssemblyName>_03.Group_Numbers</AssemblyName>
+    <RootNamespace>_04.Pascal_Triangle</RootNamespace>
+    <AssemblyName>_04.Pascal_Triangle</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,7 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Group Numbers.cs" />
+    <Compile Include="Pascal Triangle.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
