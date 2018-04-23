@@ -1,10 +1,15 @@
-﻿namespace _11.Parking_System
+﻿using System.Data;
+
+namespace _11.Parking_System
 {
     using System;
     using System.Linq;
 
     public class ParkingSystem
     {
+        public static int rows;
+        public static int cols;
+
         public static void Main()
         {
             var dimensions = Console.ReadLine()
@@ -12,8 +17,8 @@
                 .Select(int.Parse)
                 .ToArray();
 
-            var rows = dimensions[0];
-            var cols = dimensions[1];
+            rows = dimensions[0];
+            cols = dimensions[1];
 
             var parkingLot = InitializeParkingLot(rows, cols);
 
@@ -49,6 +54,11 @@
         private static int CalculateDistance(bool[][] parkingLot, int entryRow, int destinationRow, int destinationCol)
         {
             var distance = Math.Abs(destinationRow - entryRow);
+
+            if (parkingLot[destinationRow] == null)
+            {
+                parkingLot[destinationRow] = new bool[cols];
+            }
 
             if (parkingLot[destinationRow][destinationCol])
             {
@@ -94,11 +104,6 @@
         private static bool[][] InitializeParkingLot(int rows, int cols)
         {
             var parkingLot = new bool[rows][];
-
-            for (var rowIndex = 0; rowIndex < rows; rowIndex++)
-            {
-                parkingLot[rowIndex] = new bool [cols];
-            }
 
             return parkingLot;
         }
