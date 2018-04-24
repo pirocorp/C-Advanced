@@ -23,6 +23,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09. Fixing-Movie-Subtitles"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06. Buffered-Writer", "Buffered-Writer\06. Buffered-Writer.csproj", "{E3522B19-2295-4F9F-9F1B-E8D3716E0574}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10. Working-with-Files", "File-API\10. Working-with-Files.csproj", "{CB36D258-C0BA-42BA-B886-7BF0758877E2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0. Examples", "0. Examples\0. Examples.csproj", "{31151706-8E75-4955-96F5-6C5CBE1F4CAA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,8 +73,19 @@ Global
 		{E3522B19-2295-4F9F-9F1B-E8D3716E0574}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E3522B19-2295-4F9F-9F1B-E8D3716E0574}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E3522B19-2295-4F9F-9F1B-E8D3716E0574}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CB36D258-C0BA-42BA-B886-7BF0758877E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB36D258-C0BA-42BA-B886-7BF0758877E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CB36D258-C0BA-42BA-B886-7BF0758877E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CB36D258-C0BA-42BA-B886-7BF0758877E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31151706-8E75-4955-96F5-6C5CBE1F4CAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31151706-8E75-4955-96F5-6C5CBE1F4CAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31151706-8E75-4955-96F5-6C5CBE1F4CAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31151706-8E75-4955-96F5-6C5CBE1F4CAA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F1B4A1A7-2A7C-4002-A53B-4F00F717910E}
 	EndGlobalSection
 EndGlobal
