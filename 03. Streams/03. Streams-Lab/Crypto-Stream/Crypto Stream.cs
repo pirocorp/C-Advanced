@@ -52,12 +52,12 @@ public class CryptoStreamDemo
             cryptoProvider.Key = Encoding.ASCII.GetBytes(key);
             cryptoProvider.IV = Encoding.ASCII.GetBytes(key);
 
-            CryptoStream cryptoStream = new CryptoStream(destinationStream,
+            var cryptoStream = new CryptoStream(destinationStream,
                cryptoProvider.CreateEncryptor(), CryptoStreamMode.Write);
 
             using (cryptoStream)
             {
-                byte[] data = Encoding.ASCII.GetBytes(text);
+                var data = Encoding.ASCII.GetBytes(text);
 
                 cryptoStream.Write(data, 0, data.Length);
             }
