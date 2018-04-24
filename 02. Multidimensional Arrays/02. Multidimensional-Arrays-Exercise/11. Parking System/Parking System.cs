@@ -1,6 +1,4 @@
-﻿using System.Data;
-
-namespace _11.Parking_System
+﻿namespace _11.Parking_System
 {
     using System;
     using System.Linq;

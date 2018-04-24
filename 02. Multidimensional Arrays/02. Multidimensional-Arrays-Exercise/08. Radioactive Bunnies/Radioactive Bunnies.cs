@@ -60,22 +60,22 @@
                 case 'U':
                     RemovePlayerFromCurrentPosition(playerCordinates, lairLevel);
                     playerCordinates[0]--;
-                    stateOfPlayer = MovePlaterToNewPosition(playerCordinates, lairLevel);
+                    stateOfPlayer = MovePlayerToNewPosition(playerCordinates, lairLevel);
                     break;
                 case 'D':
                     RemovePlayerFromCurrentPosition(playerCordinates, lairLevel);
                     playerCordinates[0]++;
-                    stateOfPlayer = MovePlaterToNewPosition(playerCordinates, lairLevel);
+                    stateOfPlayer = MovePlayerToNewPosition(playerCordinates, lairLevel);
                     break;
                 case 'L':
                     RemovePlayerFromCurrentPosition(playerCordinates, lairLevel);
                     playerCordinates[1]--;
-                    stateOfPlayer = MovePlaterToNewPosition(playerCordinates, lairLevel);
+                    stateOfPlayer = MovePlayerToNewPosition(playerCordinates, lairLevel);
                     break;
                 case 'R':
                     RemovePlayerFromCurrentPosition(playerCordinates, lairLevel);
                     playerCordinates[1]++;
-                    stateOfPlayer = MovePlaterToNewPosition(playerCordinates, lairLevel);
+                    stateOfPlayer = MovePlayerToNewPosition(playerCordinates, lairLevel);
                     break;
             }
 
@@ -132,9 +132,9 @@
             lairLevel[playerCordinates[0]][playerCordinates[1]] = '.';
         }
 
-        private static string MovePlaterToNewPosition(int[] playerCordinates, char[][] lairLevel)
+        private static string MovePlayerToNewPosition(int[] playerCordinates, char[][] lairLevel)
         {
-            string stateOfPlayer = string.Empty;
+            var stateOfPlayer = string.Empty;
 
             if (lairLevel.Length <= playerCordinates[0] || lairLevel[0].Length <= playerCordinates[1])
             {
