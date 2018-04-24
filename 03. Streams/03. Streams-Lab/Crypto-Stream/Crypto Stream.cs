@@ -3,7 +3,7 @@ using System.IO;
 using System.Security.Cryptography;
 using System.Text;
 
-class CryptoStreamDemo  
+public class CryptoStreamDemo  
 {
     const string EncryptionKey = "ABCDEFGH";
     const string FilePath = "../../encrypted.txt";
