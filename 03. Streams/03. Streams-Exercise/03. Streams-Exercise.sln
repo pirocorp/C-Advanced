@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04. Copy Binary File", "04.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05. Slicing File", "05. Slicing File\05. Slicing File.csproj", "{6EF5DD12-5824-4D05-9397-DE0A46A8F99C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06. Zipping Sliced Files", "06. Zipping Sliced Files\06. Zipping Sliced Files.csproj", "{173C6DF8-247B-48A8-81C5-D93930D16682}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{6EF5DD12-5824-4D05-9397-DE0A46A8F99C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6EF5DD12-5824-4D05-9397-DE0A46A8F99C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6EF5DD12-5824-4D05-9397-DE0A46A8F99C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{173C6DF8-247B-48A8-81C5-D93930D16682}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{173C6DF8-247B-48A8-81C5-D93930D16682}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{173C6DF8-247B-48A8-81C5-D93930D16682}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{173C6DF8-247B-48A8-81C5-D93930D16682}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
