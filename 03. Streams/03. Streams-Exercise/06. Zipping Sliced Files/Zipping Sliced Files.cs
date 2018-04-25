@@ -1,10 +1,9 @@
-﻿using System.IO.Compression;
-
-namespace _06.Zipping_Sliced_Files
+﻿namespace _06.Zipping_Sliced_Files
 {
     using System;
     using System.Collections.Generic;
     using System.IO;
+    using System.IO.Compression;
 
     public class ZippingSlicedFiles
     {
