@@ -10,6 +10,7 @@
     public class Program
     {
         private const int PortNumber = 8000;
+        private const string HttpOK = "HTTP/1.1 200 OK\nContent-Type:text\n\n";
 
         public static void Main()
         {
@@ -30,19 +31,21 @@
 
                     var path = requestTokens[1].ToLower();
 
-                    var html = string.Empty;
+                    var html = HttpOK;
 
                     switch (path)
                     {
                         case "/info":
-                            html = File.ReadAllText("../../info.html");
+                            html += File.ReadAllText("../../info.html");
+                            html = html.Replace("{0}", $"{DateTime.Now}");
+                            html = html.Replace("{1}", $"{Environment.ProcessorCount}");
                             break;
                         case "/index":
                         case "/":
-                            html = File.ReadAllText("../../index.html");
+                            html += File.ReadAllText("../../index.html");
                             break;
                         default:
-                            html = File.ReadAllText("../../error.html");
+                            html += File.ReadAllText("../../error.html");
                             break;
                     }
 
