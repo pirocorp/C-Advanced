@@ -6,7 +6,6 @@
     using System.IO;
     using System.Text.RegularExpressions;
 
-
     public class Program
     {
         public static void Main()

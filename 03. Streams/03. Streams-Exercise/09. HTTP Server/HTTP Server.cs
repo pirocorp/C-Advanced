@@ -6,7 +6,6 @@
     using System.Net.Sockets;
     using System.IO;
 
-
     public class Program
     {
         private const int PortNumber = 8000;

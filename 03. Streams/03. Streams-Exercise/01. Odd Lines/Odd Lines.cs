@@ -3,7 +3,6 @@
     using System;
     using System.IO;
 
-
     public class OddLines
     {
         public static void Main()

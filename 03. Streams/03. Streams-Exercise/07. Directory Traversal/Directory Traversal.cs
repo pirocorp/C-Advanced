@@ -5,7 +5,6 @@
     using System.Linq;
     using System.IO;
 
-
     public class DirectoryTraversal
     {
         public static void Main()
