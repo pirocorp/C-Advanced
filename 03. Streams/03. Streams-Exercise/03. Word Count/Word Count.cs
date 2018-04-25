@@ -19,6 +19,11 @@
                 .OrderByDescending(x => x.Value)
                 .ToDictionary(x => x.Key, x => x.Value);
 
+            WriteWordsCountToFile(wordsCount);
+        }
+
+        private static void WriteWordsCountToFile(Dictionary<string, int> wordsCount)
+        {
             using (var writeResult = new StreamWriter("../../result.txt"))
             {
                 foreach (var word in wordsCount)
