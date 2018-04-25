@@ -1,12 +1,9 @@
-﻿using System.IO;
-
-namespace _08.Full_Directory_Traversal
+﻿namespace _08.Full_Directory_Traversal
 {
     using System;
     using System.Collections.Generic;
     using System.Linq;
-    using System.Text;
-    using System.Threading.Tasks;
+    using System.IO;
 
     public class FullDirectoryTraversal
     {
