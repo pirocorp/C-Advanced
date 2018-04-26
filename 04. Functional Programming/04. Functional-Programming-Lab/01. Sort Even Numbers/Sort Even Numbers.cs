@@ -7,10 +7,12 @@
     {
         public static void Main()
         {
+            Func<int, bool> filter = n => n % 2 == 0;
+
             var numbers = Console.ReadLine()
                 .Split(new[] {", "}, StringSplitOptions.RemoveEmptyEntries)
                 .Select(int.Parse)
-                .Where(n => n % 2 == 0)
+                .Where(filter)
                 .OrderBy(n => n);
 
             var result = string.Join(", ", numbers);
