@@ -1,12 +1,25 @@
-﻿using System;
-
-namespace _04._Add_VAT
+﻿namespace _04._Add_VAT
 {
-    class Program
+    using System;
+    using System.Linq;
+
+    public class AddVat
     {
-        static void Main(string[] args)
+        public static void Main()
         {
-            Console.WriteLine("Hello World!");
+            Func<decimal, decimal> vat = x => x * 1.2m;
+            Action<decimal> printer = x => Console.WriteLine($"{x:F2}");
+
+            var prices = Console.ReadLine()
+                .Split(new[] {", "}, StringSplitOptions.RemoveEmptyEntries)
+                .Select(decimal.Parse)
+                .Select(vat)
+                .ToArray();
+
+            foreach (var price in prices)
+            {
+                printer(price);
+            }
         }
     }
 }
