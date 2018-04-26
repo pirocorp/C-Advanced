@@ -7,9 +7,11 @@
     {
         public static void Main()
         {
+            Func<string, bool> checker = w => char.IsUpper(w[0]);
+
             var wordsUpperCase = Console.ReadLine()
                 .Split(new[] {" ", ", "}, StringSplitOptions.RemoveEmptyEntries)
-                .Where(w => char.IsUpper(w[0]))
+                .Where(checker)
                 .ToArray();
 
             Console.WriteLine(string.Join(Environment.NewLine, wordsUpperCase));
