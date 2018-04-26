@@ -15,9 +15,9 @@
             var divisor = int.Parse(Console.ReadLine());
 
             Func<int, bool> operation = x => x % divisor != 0;
+            Func<int[], int[]> reverse = ints => ints.Reverse().ToArray();
 
-            Console.WriteLine(string.Join(" ", numbers.Where(x => operation(x)).Reverse()));
-
+            Console.WriteLine(string.Join(" ", reverse(numbers.Where(x => operation(x)).ToArray())));
         }
     }
 }
