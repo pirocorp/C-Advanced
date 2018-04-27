@@ -65,7 +65,7 @@
             {
                 var item = command
                     .Split(new []{ "Remove filter" }, StringSplitOptions.RemoveEmptyEntries)
-                    .First();
+                    .Single();
 
                 var index = listOfCommands.FindIndex(x => x.Contains(item));
 
