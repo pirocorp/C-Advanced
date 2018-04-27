@@ -1,6 +1,4 @@
-﻿using System.Security.Cryptography.X509Certificates;
-
-namespace _05._Applied_Arithmetics
+﻿namespace _05._Applied_Arithmetics
 {
     using System;
     using System.Linq;
