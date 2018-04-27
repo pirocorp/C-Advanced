@@ -1,10 +1,8 @@
-﻿using System.Collections.Generic;
-using System.Reflection.Metadata.Ecma335;
-
-namespace _12._Inferno_III
+﻿namespace _12._Inferno_III
 {
     using System;
     using System.Linq;
+    using System.Collections.Generic;
 
     public class InfernoIii
     {
@@ -18,6 +16,10 @@ namespace _12._Inferno_III
             var listOfCommands = CommandInput();
 
             var filters = GenerateFilters(listOfCommands);
+
+            var result = numbers.Where(n => filters.All(f => !f(numbers, n)));
+
+            Console.WriteLine(string.Join(" ", result));
         }
 
         private static List<Func<List<int>, int, bool>> GenerateFilters(List<string> listOfCommands)
