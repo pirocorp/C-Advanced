@@ -56,7 +56,6 @@
 
         private static void ProccessCommand(List<string> listOfCommands, string command)
         {
-
             if (command.Contains("Add filter"))
             {
                 listOfCommands.Add(command);
