@@ -75,10 +75,17 @@
         {
             if (relativePath == "..")
             {
-                var currenthPath = GetCurrentDirectoryPath();
-                var indexOfLastSlash = currenthPath.LastIndexOf('\\');
-                var newPath = currenthPath.Substring(0, indexOfLastSlash);
-                SessionData.currentPath = newPath;
+                try
+                {
+                    var currenthPath = GetCurrentDirectoryPath();
+                    var indexOfLastSlash = currenthPath.LastIndexOf('\\');
+                    var newPath = currenthPath.Substring(0, indexOfLastSlash);
+                    SessionData.currentPath = newPath;
+                }
+                catch (ArgumentOutOfRangeException)
+                {
+                    OutputWriter.DisplayException(ExceptionMessages.UnableToGoHigherInPartitionHierarchy);
+                }
             }
             else
             {
