@@ -1,6 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations;
-
-namespace BashSoft
+﻿namespace BashSoft
 {
     using System;
     using System.Collections.Generic;
@@ -53,9 +51,37 @@ namespace BashSoft
             Directory.CreateDirectory(path);
         }
 
-        private static string GetCurrentDirectoryPath()
+        public static string GetCurrentDirectoryPath()
         {
             return SessionData.currentPath;
+        }
+
+        public static void ChangeCurrentDirectoryRelative(string relativePath)
+        {
+            if (relativePath == "..")
+            {
+                var currenthPath = GetCurrentDirectoryPath();
+                var indexOfLastSlash = currenthPath.LastIndexOf('\\');
+                var newPath = currenthPath.Substring(0, indexOfLastSlash);
+                SessionData.currentPath = newPath;
+            }
+            else
+            {
+                var currentPath = GetCurrentDirectoryPath();
+                currentPath += "\\" + relativePath;
+                ChangeCurrentDirectoryAbsolute(currentPath);
+            }
+        }
+
+        public static void ChangeCurrentDirectoryAbsolute(string absolutePath)
+        {
+            if (!Directory.Exists(absolutePath))
+            {
+                OutputWriter.DisplayException(ExceptionMessages.InvalidPath);
+                return;
+            }
+
+            SessionData.currentPath = absolutePath;
         }
     }
 }
