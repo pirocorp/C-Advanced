@@ -1,4 +1,6 @@
-﻿namespace BashSoft
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace BashSoft
 {
     using System;
     using System.Collections.Generic;
@@ -7,8 +9,9 @@
 
     public static class IOManager
     {
-        public static void TraverseDirectory(string path)
+        public static void TraverseDirectory(int depth)
         {
+            var path = GetCurrentDirectoryPath();
             OutputWriter.WriteEmptyLine();
             var initialIdentation = path.Split('\\').Length;
             var subfolders = new Queue<string>();
@@ -20,8 +23,21 @@
                 var currentPath = subfolders.Dequeue();
                 var identation = currentPath.Split('\\').Length - initialIdentation;
 
+                if (depth - identation < 0)
+                {
+                    break;
+                }
+
                 //Print the folder path
                 OutputWriter.WriteMessageOnNewLine(string.Format($"{new string('-', identation)}{currentPath}"));
+
+                //Display files in directory
+                foreach (var file in Directory.GetFiles(currentPath))
+                {
+                    var indexOfLastSlash = file.LastIndexOf('\\');
+                    var filename = file.Substring(indexOfLastSlash);
+                    OutputWriter.WriteMessageOnNewLine(new string('-', indexOfLastSlash) + filename);
+                }
 
                 //Add all it's subfolders to the end of the queue
                 foreach (var directoryPath in Directory.GetDirectories(currentPath))

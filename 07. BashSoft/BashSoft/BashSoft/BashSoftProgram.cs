@@ -7,10 +7,10 @@
     {
         public static void Main()
         {
-            ////IOManager.TraverseDirectory(@"D:\source\repos\C-Advanced\07. BashSoft\BashSoft\BashSoft");  
-            //StudentsRepository.InitializeData();
+           //StudentsRepository.InitializeData();
             //StudentsRepository.GetStudentsScoreFromCourse("Unity", "Ivan");
             //IOManager.CreateDirectoryInCurrentFolder("Test");
+            //IOManager.TraverseDirectory(1);
         }
     }
 }

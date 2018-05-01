@@ -6,4 +6,8 @@
     <StartupObject>BashSoft.BashSoftProgram</StartupObject>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <OutputPath />
+  </PropertyGroup>
+
 </Project>
