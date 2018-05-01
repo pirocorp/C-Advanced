@@ -12,6 +12,8 @@
             //IOManager.CreateDirectoryInCurrentFolder("Test");
             //IOManager.TraverseDirectory(1);
             //TestIOManager();
+            IOManager.ChangeCurrentDirectoryAbsolute(@"C:\Windows");
+            IOManager.TraverseDirectory(20);
         }
 
         private static void TestIOManager()

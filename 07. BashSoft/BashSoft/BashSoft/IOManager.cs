@@ -27,20 +27,27 @@
                 }
 
                 //Print the folder path
-                OutputWriter.WriteMessageOnNewLine(string.Format($"{new string('-', identation)}{currentPath}"));
+                OutputWriter.WriteMessageOnNewLine($"{new string('-', identation)}{currentPath}");
 
-                //Display files in directory
-                foreach (var file in Directory.GetFiles(currentPath))
+                try
                 {
-                    var indexOfLastSlash = file.LastIndexOf('\\');
-                    var filename = file.Substring(indexOfLastSlash);
-                    OutputWriter.WriteMessageOnNewLine(new string('-', indexOfLastSlash) + filename);
+                    //Display files in directory
+                    foreach (var file in Directory.GetFiles(currentPath))
+                    {
+                        var indexOfLastSlash = file.LastIndexOf('\\');
+                        var filename = file.Substring(indexOfLastSlash);
+                        OutputWriter.WriteMessageOnNewLine(new string('-', indexOfLastSlash) + filename);
+                    }
+
+                    //Add all it's subfolders to the end of the queue
+                    foreach (var directoryPath in Directory.GetDirectories(currentPath))
+                    {
+                        subfolders.Enqueue(directoryPath);
+                    }
                 }
-
-                //Add all it's subfolders to the end of the queue
-                foreach (var directoryPath in Directory.GetDirectories(currentPath))
+                catch (UnauthorizedAccessException)
                 {
-                    subfolders.Enqueue(directoryPath);
+                    OutputWriter.DisplayException(ExceptionMessages.UnauthorizedAccessException);
                 }
             }
         }
