@@ -10,18 +10,24 @@
     {
         public static void CompareContent(string userOutputPath, string expectedOutputPath)
         {
-            OutputWriter.WriteMessageOnNewLine("Reading files....");
+            try
+            {
+                OutputWriter.WriteMessageOnNewLine("Reading files....");
 
-            var mismatchPath = GetMismatchPath(expectedOutputPath);
+                var mismatchPath = GetMismatchPath(expectedOutputPath);
 
-            var actualOutputLines = File.ReadAllLines(userOutputPath);
-            var expectedOutputLines = File.ReadAllLines(expectedOutputPath);
+                var actualOutputLines = File.ReadAllLines(userOutputPath);
+                var expectedOutputLines = File.ReadAllLines(expectedOutputPath);
 
-            bool hasMismatch;
-            var mismatches = GetLinesWithPossibleMismatches(actualOutputLines, expectedOutputLines, out hasMismatch);
+                var mismatches = GetLinesWithPossibleMismatches(actualOutputLines, expectedOutputLines, out var hasMismatch);
 
-            PrintOutput(mismatches, hasMismatch, mismatchPath);
-            OutputWriter.WriteMessageOnNewLine("Files read!");
+                PrintOutput(mismatches, hasMismatch, mismatchPath);
+                OutputWriter.WriteMessageOnNewLine("Files read!");
+            }
+            catch (FileNotFoundException)
+            {
+                OutputWriter.DisplayException(ExceptionMessages.InvalidPath);
+            }
         }
 
         private static void PrintOutput(string[] mismatches, bool hasMismatch, string mismatchPath)
