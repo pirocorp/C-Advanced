@@ -43,10 +43,20 @@
             hasMismatch = false;
             var output = string.Empty;
 
-            var mismatches = new string[actualOutputLines.Length];
             OutputWriter.WriteMessageOnNewLine("Comparing files...");
 
-            for (var index = 0; index < actualOutputLines.Length; index++)
+            var minOutputLines = actualOutputLines.Length;
+
+            if (actualOutputLines.Length != expectedOutputLines.Length)
+            {
+                hasMismatch = true;
+                minOutputLines = Math.Min(actualOutputLines.Length, expectedOutputLines.Length);
+                OutputWriter.DisplayException(ExceptionMessages.ComparisonOfFilesWithDifferentSizes);
+            }
+
+            var mismatches = new string[minOutputLines];
+
+            for (var index = 0; index < minOutputLines; index++)
             {
                 var actualLine = actualOutputLines[index];
                 var expectedLine = expectedOutputLines[index];
