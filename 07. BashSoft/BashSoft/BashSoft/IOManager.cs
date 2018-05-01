@@ -30,5 +30,16 @@
                 }
             }
         }
+
+        public static void CreateDirectoryInCurrentFolder(string name)
+        {
+            var path = GetCurrentDirectoryPath() + "\\" + name;
+            Directory.CreateDirectory(path);
+        }
+
+        private static string GetCurrentDirectoryPath()
+        {
+            return SessionData.currentPath;
+        }
     }
 }
