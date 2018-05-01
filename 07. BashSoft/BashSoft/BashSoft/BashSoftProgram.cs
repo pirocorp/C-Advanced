@@ -11,7 +11,7 @@
             //StudentsRepository.GetStudentsScoreFromCourse("Unity", "Ivan");
             //IOManager.CreateDirectoryInCurrentFolder("Test");
             //IOManager.TraverseDirectory(1);
-            TestIOManager();
+            //TestIOManager();
             //IOManager.ChangeCurrentDirectoryAbsolute(@"C:\Windows");
             //IOManager.TraverseDirectory(20);
         }
