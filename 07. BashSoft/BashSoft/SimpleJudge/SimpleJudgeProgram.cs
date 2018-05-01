@@ -1,7 +1,5 @@
 ﻿namespace SimpleJudge
 {
-    using System;
-
     public class SimpleJudgeProgram
     {
         public static void Main()

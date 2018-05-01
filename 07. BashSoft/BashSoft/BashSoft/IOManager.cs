@@ -2,7 +2,6 @@
 {
     using System;
     using System.Collections.Generic;
-    using System.Text;
     using System.IO;
 
     public static class IOManager
@@ -11,7 +10,7 @@
         {
             var path = GetCurrentDirectoryPath();
             OutputWriter.WriteEmptyLine();
-            var initialIdentation = path.Split('\\').Length;
+            var initialIdentation = path.Split(new []{ '\\' }, StringSplitOptions.RemoveEmptyEntries).Length;
             var subfolders = new Queue<string>();
             subfolders.Enqueue(path);
 
@@ -19,10 +18,15 @@
             {
                 //Dequeue the folder from the start of te queue
                 var currentPath = subfolders.Dequeue();
-                var identation = currentPath.Split('\\').Length - initialIdentation;
+                var identation = currentPath.Split(new[] { '\\' }, StringSplitOptions.RemoveEmptyEntries).Length - initialIdentation;
 
                 if (depth - identation < 0)
                 {
+                    foreach (var folder in subfolders)
+                    {
+                        OutputWriter.WriteMessageOnNewLine($"{new string('-', identation)}{folder}");
+                    }
+
                     break;
                 }
 
@@ -80,6 +84,12 @@
                     var currenthPath = GetCurrentDirectoryPath();
                     var indexOfLastSlash = currenthPath.LastIndexOf('\\');
                     var newPath = currenthPath.Substring(0, indexOfLastSlash);
+
+                    if (!newPath.Contains("\\"))
+                    {
+                        newPath += "\\";
+                    }
+
                     SessionData.currentPath = newPath;
                 }
                 catch (ArgumentOutOfRangeException)

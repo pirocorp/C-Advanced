@@ -1,8 +1,9 @@
-﻿namespace BashSoft
+﻿using System.IO;
+
+namespace BashSoft
 {
     using System;
     using System.Collections.Generic;
-    using System.Text;
 
     public static class StudentsRepository
     {
@@ -11,13 +12,13 @@
         //Dictionary<course_name, Dictionary<user_name, Scores_On_tasks>>>
         private static Dictionary<string, Dictionary<string, List<int>>> studentsByCourse;
 
-        public static void InitializeData()
+        public static void InitializeData(string fileName)
         {
             if (!isDataInitialized)
             {
                 OutputWriter.WriteMessageOnNewLine("Reading data...");
                 studentsByCourse = new Dictionary<string, Dictionary<string, List<int>>>();
-                ReadData();
+                ReadData(fileName);
             }
             else
             {
@@ -25,32 +26,43 @@
             }
         }
 
-        private static void ReadData()
+        private static void ReadData(string fileName)
         {
-            var input = Console.ReadLine();
+            var path = SessionData.currentPath + "\\Resources\\" + fileName;
 
-            while (!string.IsNullOrEmpty(input))
+            if (File.Exists(path))
             {
-                var tokens = input.Split(' ');
-                var course = tokens[0];
-                var student = tokens[1];
-                var mark = int.Parse(tokens[2]);
+                var allInputLines = File.ReadAllLines(path);
 
-                //Check if the course exist and if dont initialize it
-                if (!studentsByCourse.ContainsKey(course))
+                for (var line = 0; line < allInputLines.Length; line++)
                 {
-                    studentsByCourse[course] = new Dictionary<string, List<int>>();
-                }
+                    if (!string.IsNullOrEmpty(allInputLines[line]))
+                    {
+                        var data = allInputLines[line].Split(' ');
+                        var course = data[0];
+                        var student = data[1];
+                        var mark = int.Parse(data[2]);
 
-                //Check if the student exist and if dont initialize it
-                if (!studentsByCourse[course].ContainsKey(student))
-                {
-                    studentsByCourse[course][student] = new List<int>();
-                }
+                        //Check if the course exist and if dont initialize it
+                        if (!studentsByCourse.ContainsKey(course))
+                        {
+                            studentsByCourse[course] = new Dictionary<string, List<int>>();
+                        }
 
-                //ADD the mark
-                studentsByCourse[course][student].Add(mark);
-                input = Console.ReadLine();
+                        //Check if the student exist and if dont initialize it
+                        if (!studentsByCourse[course].ContainsKey(student))
+                        {
+                            studentsByCourse[course][student] = new List<int>();
+                        }
+
+                        //ADD the mark
+                        studentsByCourse[course][student].Add(mark);
+                    }
+                }
+            }
+            else
+            {
+                OutputWriter.DisplayException(ExceptionMessages.InvalidPath);
             }
 
             isDataInitialized = true;
