@@ -39,9 +39,19 @@
                     OutputWriter.WriteMessageOnNewLine(line);
                 }
 
-                File.WriteAllLines(mismatchPath, mismatches);
+                try
+                {
+                    File.WriteAllLines(mismatchPath, mismatches);
+                }
+                catch (DirectoryNotFoundException)
+                {
+                    OutputWriter.DisplayException(ExceptionMessages.InvalidPath);
+                }
+
                 return;
             }
+
+            OutputWriter.WriteMessageOnNewLine("Files are identical. There are no mismatches.");
         }
 
         private static string[] GetLinesWithPossibleMismatches(string[] actualOutputLines, string[] expectedOutputLines, out bool hasMismatch)
