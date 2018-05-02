@@ -14,7 +14,23 @@
         private static void FilterAndTake(Dictionary<string, List<int>> wantedData, Predicate<double> givenFilter,
             int studentsToTake)
         {
+            var counterForPrinted = 0;
 
+            foreach (var student_points in wantedData)
+            {
+                if (counterForPrinted == studentsToTake)
+                {
+                    break;
+                }
+
+                var averageMark = Average(student_points.Value);
+
+                if (givenFilter(averageMark))
+                {
+                    OutputWriter.DisplayStudent(student_points);
+                    counterForPrinted++;
+                }
+            }
         }
 
         private static bool ExcellentFilter(double mark)
