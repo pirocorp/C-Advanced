@@ -1,4 +1,6 @@
-﻿namespace BashSoft
+﻿using System.Linq;
+
+namespace BashSoft
 {
     using System;
     using System.Collections.Generic;
@@ -40,7 +42,9 @@
                     break;
                 }
 
-                var averageMark = Average(student_points.Value);
+                var averageScore = student_points.Value.Average();
+                var percentageOfFullfilment = averageScore / 100;
+                var averageMark = percentageOfFullfilment * 4 + 2;
 
                 if (givenFilter(averageMark))
                 {
@@ -48,21 +52,6 @@
                     counterForPrinted++;
                 }
             }
-        }
-
-        private static double Average(List<int> scoresOnTasks)
-        {
-            var totalScore = 0.0;
-
-            foreach (var score in scoresOnTasks)
-            {
-                totalScore += score;
-            }
-
-            var percentageOfAll = totalScore / (scoresOnTasks.Count * 100);
-            var mark = percentageOfAll * 4 + 2;
-
-            return mark;
         }
     }
 }
