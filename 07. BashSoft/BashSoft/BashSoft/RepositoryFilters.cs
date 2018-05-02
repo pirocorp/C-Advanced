@@ -6,8 +6,10 @@
 
     public static class RepositoryFilters
     {
-        public static void FilterAndTake(Dictionary<string, List<int>> wantedData, string wantedFilter, int studentsToTake) 
+        public static void FilterAndTake(Dictionary<string, List<int>> wantedData, string wantedFilter, int studentsToTake)
         {
+            wantedFilter = wantedFilter.ToLower();
+
             if (wantedFilter == "excellent")
             {
                 FilterAndTake(wantedData, ExcellentFilter, studentsToTake);
