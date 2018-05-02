@@ -36,6 +36,9 @@
                 case "help":
                     TryGetHelp(input, data);
                     break;
+                case "show":
+                    TryShowWantedData(input, data);
+                    break;
                 case "filter":
                     //TODO
                     break;
@@ -57,6 +60,25 @@
             }
         }
 
+        private static void TryShowWantedData(string input, string[] data)
+        {
+            if (data.Length == 2)
+            {
+                var courseName = data[1];
+                StudentsRepository.GetAllStudentsFromCourse(courseName);
+            }
+            else if (data.Length == 3)
+            {
+                var courseName = data[1];
+                var userName = data[2];
+                StudentsRepository.GetStudentsScoreFromCourse(courseName, userName);
+            }
+            else
+            {
+                DisplayInvalidCommandMessage(input);
+            }
+        }
+
         private static void TryGetHelp(string input, string[] data)
         {
             if (data.Length == 1)
@@ -72,6 +94,7 @@
                 OutputWriter.WriteMessageOnNewLine(string.Format("|{0, -98}|", "order increasing students - order {courseName} ascending/descending take 20/10/all (the output is written on the console)"));
                 OutputWriter.WriteMessageOnNewLine(string.Format("|{0, -98}|", "download file - download: path of file (saved in current directory)"));
                 OutputWriter.WriteMessageOnNewLine(string.Format("|{0, -98}|", "download file asinchronously - downloadAsynch: path of file (save in the current directory)"));
+                OutputWriter.WriteMessageOnNewLine(string.Format("Show information for given course or given student - show: courseName (username) - user name may be omitted"));
                 OutputWriter.WriteMessageOnNewLine(string.Format("|{0, -98}|", "get help – help"));
                 OutputWriter.WriteMessageOnNewLine($"{new string('_', 100)}");
                 OutputWriter.WriteEmptyLine();
