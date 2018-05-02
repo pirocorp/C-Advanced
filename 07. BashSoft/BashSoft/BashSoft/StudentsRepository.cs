@@ -29,7 +29,7 @@ namespace BashSoft
 
         private static void ReadData(string fileName)
         {
-            var path = SessionData.currentPath + "\\Resources\\" + fileName;
+            var path = SessionData.currentPath + "\\" + fileName;
 
             if (File.Exists(path))
             {
