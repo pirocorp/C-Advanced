@@ -8,7 +8,22 @@
     {
         public static void FilterAndTake(Dictionary<string, List<int>> wantedData, string wantedFilter, int studentsToTake) 
         {
-            
+            if (wantedFilter == "excellent")
+            {
+                FilterAndTake(wantedData, ExcellentFilter, studentsToTake);
+            }
+            else if (wantedFilter == "average")
+            {
+                FilterAndTake(wantedData, AverageFilter, studentsToTake);
+            }
+            else if (wantedFilter == "poor")
+            {
+                FilterAndTake(wantedData, PoorFilter, studentsToTake);
+            }
+            else
+            {
+                OutputWriter.DisplayException(ExceptionMessages.InvalidStudentFilter);
+            }
         }
 
         private static void FilterAndTake(Dictionary<string, List<int>> wantedData, Predicate<double> givenFilter,
