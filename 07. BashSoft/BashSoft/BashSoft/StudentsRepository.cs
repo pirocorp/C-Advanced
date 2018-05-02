@@ -1,4 +1,5 @@
 ﻿using System.IO;
+using System.Text.RegularExpressions;
 
 namespace BashSoft
 {
@@ -32,31 +33,38 @@ namespace BashSoft
 
             if (File.Exists(path))
             {
+                const string pattern =
+                    @"(?<courseName>[A-Z][a-zA-Z#+]*_[A-Z][a-z]{2}_\d{4})\s+(?<userName>[A-Z][a-z]{0,3}\d{2}_\d{2,4})\s+(?<score>\d+)";
+                var rgx = new Regex(pattern, RegexOptions.Compiled);
+
                 var allInputLines = File.ReadAllLines(path);
 
                 for (var line = 0; line < allInputLines.Length; line++)
                 {
-                    if (!string.IsNullOrEmpty(allInputLines[line]))
+                    if (!string.IsNullOrEmpty(allInputLines[line]) && rgx.IsMatch(allInputLines[line]))
                     {
-                        var data = allInputLines[line].Split(' ');
-                        var course = data[0];
-                        var student = data[1];
-                        var mark = int.Parse(data[2]);
+                        var currentMatch = rgx.Match(allInputLines[line]);
+                        var course = currentMatch.Groups["courseName"].Value;
+                        var student = currentMatch.Groups["userName"].Value;
+                        var hasParsedScore = int.TryParse(currentMatch.Groups["score"].Value, out var studentScoreOnTask);
 
-                        //Check if the course exist and if dont initialize it
-                        if (!studentsByCourse.ContainsKey(course))
+                        if (hasParsedScore && studentScoreOnTask >= 0 && studentScoreOnTask <= 100)
                         {
-                            studentsByCourse[course] = new Dictionary<string, List<int>>();
-                        }
+                            //Check if the course exist and if dont initialize it
+                            if (!studentsByCourse.ContainsKey(course))
+                            {
+                                studentsByCourse[course] = new Dictionary<string, List<int>>();
+                            }
 
-                        //Check if the student exist and if dont initialize it
-                        if (!studentsByCourse[course].ContainsKey(student))
-                        {
-                            studentsByCourse[course][student] = new List<int>();
-                        }
+                            //Check if the student exist and if dont initialize it
+                            if (!studentsByCourse[course].ContainsKey(student))
+                            {
+                                studentsByCourse[course][student] = new List<int>();
+                            }
 
-                        //ADD the mark
-                        studentsByCourse[course][student].Add(mark);
+                            //ADD the mark
+                            studentsByCourse[course][student].Add(studentScoreOnTask);
+                        }
                     }
                 }
             }
