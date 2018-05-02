@@ -1,10 +1,9 @@
-﻿using System.IO;
-using System.Text.RegularExpressions;
-
-namespace BashSoft
+﻿namespace BashSoft
 {
     using System;
     using System.Collections.Generic;
+    using System.IO;
+    using System.Text.RegularExpressions;
 
     public static class StudentsRepository
     {
@@ -132,6 +131,19 @@ namespace BashSoft
                 {
                     OutputWriter.DisplayStudent(studentMarksEntry);
                 }
+            }
+        }
+
+        public static void FilterAndTake(string courseName, string givenFilter, int? studentsToTake = null)
+        {
+            if (IsQueryForCoursePossible(courseName))
+            {
+                if (studentsToTake == null)
+                {
+                    studentsToTake = studentsByCourse[courseName].Count;
+                }
+
+                RepositoryFilters.FilterAndTake(studentsByCourse[courseName], givenFilter, studentsToTake.Value);
             }
         }
     }
