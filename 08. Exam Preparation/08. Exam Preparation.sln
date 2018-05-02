@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2043
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. Jedi Meditation", "01. Jedi Meditation\01. Jedi Meditation.csproj", "{CE901A5D-D359-498B-A38D-5FA54D4D8AB7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CE901A5D-D359-498B-A38D-5FA54D4D8AB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE901A5D-D359-498B-A38D-5FA54D4D8AB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE901A5D-D359-498B-A38D-5FA54D4D8AB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE901A5D-D359-498B-A38D-5FA54D4D8AB7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4035EB28-4466-428E-B772-7AB071A1FA21}
+	EndGlobalSection
+EndGlobal
