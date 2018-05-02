@@ -31,5 +31,20 @@
         {
             return mark < 3.5;
         }
+
+        private static double Average(List<int> scoresOnTasks)
+        {
+            var totalScore = 0.0;
+
+            foreach (var score in scoresOnTasks)
+            {
+                totalScore += score;
+            }
+
+            var percentageOfAll = totalScore / (scoresOnTasks.Count * 100);
+            var mark = percentageOfAll * 4 + 2;
+
+            return mark;
+        }
     }
 }
