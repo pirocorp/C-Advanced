@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05. Cubic Assault", "05. Cu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06. Bunker Buster", "06. Bunker Buster\06. Bunker Buster.csproj", "{F4D6C34A-0074-4582-B06A-408ACB0604C1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07. Array Slider", "07. Array Slider\07. Array Slider.csproj", "{CDF8B6C8-256E-40AB-B4AC-5FFD39691921}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{F4D6C34A-0074-4582-B06A-408ACB0604C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F4D6C34A-0074-4582-B06A-408ACB0604C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F4D6C34A-0074-4582-B06A-408ACB0604C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CDF8B6C8-256E-40AB-B4AC-5FFD39691921}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDF8B6C8-256E-40AB-B4AC-5FFD39691921}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDF8B6C8-256E-40AB-B4AC-5FFD39691921}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDF8B6C8-256E-40AB-B4AC-5FFD39691921}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
