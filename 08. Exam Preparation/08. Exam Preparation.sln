@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03. Cubic Artillery", "03. 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04. Cubic's Rube", "04. Cubic's Rube\04. Cubic's Rube.csproj", "{66840122-B13B-4E45-AF09-B9ACF2C30C81}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{0838E0DA-94DF-4458-BB7F-24D0120094F7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05. Cubic Assault", "05. Cubic Assault\05. Cubic Assault.csproj", "{B1F77453-4283-4438-B452-CB1B6DF5E2F9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,10 +35,10 @@ Global
 		{66840122-B13B-4E45-AF09-B9ACF2C30C81}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{66840122-B13B-4E45-AF09-B9ACF2C30C81}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{66840122-B13B-4E45-AF09-B9ACF2C30C81}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0838E0DA-94DF-4458-BB7F-24D0120094F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0838E0DA-94DF-4458-BB7F-24D0120094F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0838E0DA-94DF-4458-BB7F-24D0120094F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0838E0DA-94DF-4458-BB7F-24D0120094F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1F77453-4283-4438-B452-CB1B6DF5E2F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1F77453-4283-4438-B452-CB1B6DF5E2F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1F77453-4283-4438-B452-CB1B6DF5E2F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1F77453-4283-4438-B452-CB1B6DF5E2F9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
