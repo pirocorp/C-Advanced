@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07. Array Slider", "07. Arr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08. Plus-Remove", "08. Plus-Remove\08. Plus-Remove.csproj", "{CDB22449-3F43-4F55-8D3B-3B685EACCD25}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09. Extract Hyperlinks", "09. Extract Hyperlinks\09. Extract Hyperlinks.csproj", "{D3D82034-05E6-49D8-B2A0-C60BAD256C90}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +59,10 @@ Global
 		{CDB22449-3F43-4F55-8D3B-3B685EACCD25}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CDB22449-3F43-4F55-8D3B-3B685EACCD25}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CDB22449-3F43-4F55-8D3B-3B685EACCD25}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3D82034-05E6-49D8-B2A0-C60BAD256C90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3D82034-05E6-49D8-B2A0-C60BAD256C90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3D82034-05E6-49D8-B2A0-C60BAD256C90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3D82034-05E6-49D8-B2A0-C60BAD256C90}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
