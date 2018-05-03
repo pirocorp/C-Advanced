@@ -3,11 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27428.2043
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. Jedi Meditation", "01. Jedi Meditation\01. Jedi Meditation.csproj", "{CE901A5D-D359-498B-A38D-5FA54D4D8AB7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01. Jedi Meditation", "01. Jedi Meditation\01. Jedi Meditation.csproj", "{CE901A5D-D359-498B-A38D-5FA54D4D8AB7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. Jedi Galaxy", "02. Jedi Galaxy\02. Jedi Galaxy.csproj", "{2D3FCEAC-783B-424F-A7F1-F8CB1D2D964A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02. Jedi Galaxy", "02. Jedi Galaxy\02. Jedi Galaxy.csproj", "{2D3FCEAC-783B-424F-A7F1-F8CB1D2D964A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03. Cubic Artillery", "03. Cubic Artillery\03. Cubic Artillery.csproj", "{922F1AC0-7D04-4603-BD60-816E0D46D565}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03. Cubic Artillery", "03. Cubic Artillery\03. Cubic Artillery.csproj", "{922F1AC0-7D04-4603-BD60-816E0D46D565}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04. Cubic's Rube", "04. Cubic's Rube\04. Cubic's Rube.csproj", "{66840122-B13B-4E45-AF09-B9ACF2C30C81}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{0838E0DA-94DF-4458-BB7F-24D0120094F7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +31,14 @@ Global
 		{922F1AC0-7D04-4603-BD60-816E0D46D565}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{922F1AC0-7D04-4603-BD60-816E0D46D565}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{922F1AC0-7D04-4603-BD60-816E0D46D565}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66840122-B13B-4E45-AF09-B9ACF2C30C81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66840122-B13B-4E45-AF09-B9ACF2C30C81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66840122-B13B-4E45-AF09-B9ACF2C30C81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66840122-B13B-4E45-AF09-B9ACF2C30C81}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0838E0DA-94DF-4458-BB7F-24D0120094F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0838E0DA-94DF-4458-BB7F-24D0120094F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0838E0DA-94DF-4458-BB7F-24D0120094F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0838E0DA-94DF-4458-BB7F-24D0120094F7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
