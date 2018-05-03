@@ -1,6 +1,4 @@
-﻿using System.IO;
-
-namespace _06._Bunker_Buster
+﻿namespace _06._Bunker_Buster
 {
     using System;
     using System.Linq;
