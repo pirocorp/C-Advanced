@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04. Cubic's Rube", "04. Cub
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05. Cubic Assault", "05. Cubic Assault\05. Cubic Assault.csproj", "{B1F77453-4283-4438-B452-CB1B6DF5E2F9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06. Bunker Buster", "06. Bunker Buster\06. Bunker Buster.csproj", "{F4D6C34A-0074-4582-B06A-408ACB0604C1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{B1F77453-4283-4438-B452-CB1B6DF5E2F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B1F77453-4283-4438-B452-CB1B6DF5E2F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B1F77453-4283-4438-B452-CB1B6DF5E2F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4D6C34A-0074-4582-B06A-408ACB0604C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4D6C34A-0074-4582-B06A-408ACB0604C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4D6C34A-0074-4582-B06A-408ACB0604C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4D6C34A-0074-4582-B06A-408ACB0604C1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
