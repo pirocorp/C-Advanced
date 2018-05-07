@@ -35,6 +35,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "15. Clearing Commands", "15
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "16. Little John", "16. Little John\16. Little John.csproj", "{174AC320-032E-4244-AF97-1583EE6D631E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "17. Phone Numbers", "17. Phone Numbers\17. Phone Numbers.csproj", "{6C42FED4-2BD2-4900-B5B6-BE52572A376F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -105,6 +107,10 @@ Global
 		{174AC320-032E-4244-AF97-1583EE6D631E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{174AC320-032E-4244-AF97-1583EE6D631E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{174AC320-032E-4244-AF97-1583EE6D631E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C42FED4-2BD2-4900-B5B6-BE52572A376F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C42FED4-2BD2-4900-B5B6-BE52572A376F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C42FED4-2BD2-4900-B5B6-BE52572A376F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C42FED4-2BD2-4900-B5B6-BE52572A376F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
