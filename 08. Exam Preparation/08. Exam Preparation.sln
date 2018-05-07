@@ -25,6 +25,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "10. Semantic HTML", "10. Se
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11. X-Removal", "11. X-Removal\11. X-Removal.csproj", "{522EA0CB-1DF4-4CAD-A18F-B28C370FC415}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12. Vladko's Notebook", "12. Vladko's Notebook\12. Vladko's Notebook.csproj", "{C6AE0A1D-576B-4DC8-A5CB-8F13DF7D9A84}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,10 @@ Global
 		{522EA0CB-1DF4-4CAD-A18F-B28C370FC415}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{522EA0CB-1DF4-4CAD-A18F-B28C370FC415}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{522EA0CB-1DF4-4CAD-A18F-B28C370FC415}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6AE0A1D-576B-4DC8-A5CB-8F13DF7D9A84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6AE0A1D-576B-4DC8-A5CB-8F13DF7D9A84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6AE0A1D-576B-4DC8-A5CB-8F13DF7D9A84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6AE0A1D-576B-4DC8-A5CB-8F13DF7D9A84}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
