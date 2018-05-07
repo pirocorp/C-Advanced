@@ -29,6 +29,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "12. Vladko's Notebook", "12
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "13. Text Gravity", "13. Text Gravity\13. Text Gravity.csproj", "{AF10050F-2D7B-46C9-998B-57AADD3E802C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "14. Uppercase Words", "14. Uppercase Words\14. Uppercase Words.csproj", "{91262F28-1F1C-4791-A6E9-3457C20BA71E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,10 @@ Global
 		{AF10050F-2D7B-46C9-998B-57AADD3E802C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AF10050F-2D7B-46C9-998B-57AADD3E802C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AF10050F-2D7B-46C9-998B-57AADD3E802C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91262F28-1F1C-4791-A6E9-3457C20BA71E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91262F28-1F1C-4791-A6E9-3457C20BA71E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91262F28-1F1C-4791-A6E9-3457C20BA71E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91262F28-1F1C-4791-A6E9-3457C20BA71E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
