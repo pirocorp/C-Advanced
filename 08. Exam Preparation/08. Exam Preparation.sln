@@ -27,11 +27,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "11. X-Removal", "11. X-Remo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "12. Vladko's Notebook", "12. Vladko's Notebook\12. Vladko's Notebook.csproj", "{C6AE0A1D-576B-4DC8-A5CB-8F13DF7D9A84}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "13. Text Gravity", "13. Text Gravity\13. Text Gravity.csproj", "{AF10050F-2D7B-46C9-998B-57AADD3E802C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "13. Text Gravity", "13. Text Gravity\13. Text Gravity.csproj", "{AF10050F-2D7B-46C9-998B-57AADD3E802C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "14. Uppercase Words", "14. Uppercase Words\14. Uppercase Words.csproj", "{91262F28-1F1C-4791-A6E9-3457C20BA71E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "14. Uppercase Words", "14. Uppercase Words\14. Uppercase Words.csproj", "{91262F28-1F1C-4791-A6E9-3457C20BA71E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "15. Clearing Commands", "15. Clearing Commands\15. Clearing Commands.csproj", "{69C99756-F266-4DB5-9377-A8F9FF92DE5E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "15. Clearing Commands", "15. Clearing Commands\15. Clearing Commands.csproj", "{69C99756-F266-4DB5-9377-A8F9FF92DE5E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "16. Little John", "16. Little John\16. Little John.csproj", "{174AC320-032E-4244-AF97-1583EE6D631E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -99,6 +101,10 @@ Global
 		{69C99756-F266-4DB5-9377-A8F9FF92DE5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{69C99756-F266-4DB5-9377-A8F9FF92DE5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{69C99756-F266-4DB5-9377-A8F9FF92DE5E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{174AC320-032E-4244-AF97-1583EE6D631E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{174AC320-032E-4244-AF97-1583EE6D631E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{174AC320-032E-4244-AF97-1583EE6D631E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{174AC320-032E-4244-AF97-1583EE6D631E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
