@@ -31,6 +31,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "13. Text Gravity", "13. Tex
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "14. Uppercase Words", "14. Uppercase Words\14. Uppercase Words.csproj", "{91262F28-1F1C-4791-A6E9-3457C20BA71E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "15. Clearing Commands", "15. Clearing Commands\15. Clearing Commands.csproj", "{69C99756-F266-4DB5-9377-A8F9FF92DE5E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -93,6 +95,10 @@ Global
 		{91262F28-1F1C-4791-A6E9-3457C20BA71E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{91262F28-1F1C-4791-A6E9-3457C20BA71E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{91262F28-1F1C-4791-A6E9-3457C20BA71E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{69C99756-F266-4DB5-9377-A8F9FF92DE5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69C99756-F266-4DB5-9377-A8F9FF92DE5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69C99756-F266-4DB5-9377-A8F9FF92DE5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69C99756-F266-4DB5-9377-A8F9FF92DE5E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
