@@ -12,7 +12,7 @@ namespace _17._Phone_Numbers
         {
             var listOfPhones = new List<KeyValuePair<string, string>>();
 
-            var namePhonePairPattern = "(?<name>[A-Z][A-Za-z]*)(?<inBetween>[^a-zA-Z+]*?)(?<phone>[0-9+][0-9][()\\/.\\-0-9 ]*[0-9])";
+            var namePhonePairPattern = "(?<name>[A-Z][A-Za-z]*)(?<inBetween>[^a-zA-Z+]*?)(?<phone>[0-9+]((?<!\\+)[()\\/.\\- ]|[0-9])*[0-9])";
             var regex = new Regex(namePhonePairPattern, RegexOptions.Multiline);
 
             var sb = new StringBuilder();
