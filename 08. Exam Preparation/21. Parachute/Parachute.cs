@@ -1,9 +1,8 @@
-﻿using System.Linq;
-
-namespace _21._Parachute
+﻿namespace _21._Parachute
 {
     using System;
     using System.Collections.Generic;
+    using System.Linq;
 
     public class Parachute
     {
