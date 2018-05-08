@@ -33,13 +33,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "14. Uppercase Words", "14. 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "15. Clearing Commands", "15. Clearing Commands\15. Clearing Commands.csproj", "{69C99756-F266-4DB5-9377-A8F9FF92DE5E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "16. Little John", "16. Little John\16. Little John.csproj", "{174AC320-032E-4244-AF97-1583EE6D631E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "16. Little John", "16. Little John\16. Little John.csproj", "{174AC320-032E-4244-AF97-1583EE6D631E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "17. Phone Numbers", "17. Phone Numbers\17. Phone Numbers.csproj", "{6C42FED4-2BD2-4900-B5B6-BE52572A376F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "17. Phone Numbers", "17. Phone Numbers\17. Phone Numbers.csproj", "{6C42FED4-2BD2-4900-B5B6-BE52572A376F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "18. Sum Of All Values", "18. Sum Of All Values\18. Sum Of All Values.csproj", "{6C8F6D60-50A4-4203-B5ED-02B65E83A658}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "18. Sum Of All Values", "18. Sum Of All Values\18. Sum Of All Values.csproj", "{6C8F6D60-50A4-4203-B5ED-02B65E83A658}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "19. Matrix Shuffle", "19. Matrix Shuffle\19. Matrix Shuffle.csproj", "{76C1609B-5129-4DC6-8D9B-008ABBBF3DCA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "19. Matrix Shuffle", "19. Matrix Shuffle\19. Matrix Shuffle.csproj", "{76C1609B-5129-4DC6-8D9B-008ABBBF3DCA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "20. The Numbers", "20. The Numbers\20. The Numbers.csproj", "{A7433D90-31D4-4B7A-B8F9-A693F443ED3E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -123,6 +125,10 @@ Global
 		{76C1609B-5129-4DC6-8D9B-008ABBBF3DCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{76C1609B-5129-4DC6-8D9B-008ABBBF3DCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{76C1609B-5129-4DC6-8D9B-008ABBBF3DCA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7433D90-31D4-4B7A-B8F9-A693F443ED3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7433D90-31D4-4B7A-B8F9-A693F443ED3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7433D90-31D4-4B7A-B8F9-A693F443ED3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7433D90-31D4-4B7A-B8F9-A693F443ED3E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
