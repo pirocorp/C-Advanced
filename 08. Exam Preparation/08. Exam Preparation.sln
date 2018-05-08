@@ -39,6 +39,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "17. Phone Numbers", "17. Ph
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "18. Sum Of All Values", "18. Sum Of All Values\18. Sum Of All Values.csproj", "{6C8F6D60-50A4-4203-B5ED-02B65E83A658}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "19. Matrix Shuffle", "19. Matrix Shuffle\19. Matrix Shuffle.csproj", "{76C1609B-5129-4DC6-8D9B-008ABBBF3DCA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -117,6 +119,10 @@ Global
 		{6C8F6D60-50A4-4203-B5ED-02B65E83A658}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6C8F6D60-50A4-4203-B5ED-02B65E83A658}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6C8F6D60-50A4-4203-B5ED-02B65E83A658}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76C1609B-5129-4DC6-8D9B-008ABBBF3DCA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76C1609B-5129-4DC6-8D9B-008ABBBF3DCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76C1609B-5129-4DC6-8D9B-008ABBBF3DCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76C1609B-5129-4DC6-8D9B-008ABBBF3DCA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
