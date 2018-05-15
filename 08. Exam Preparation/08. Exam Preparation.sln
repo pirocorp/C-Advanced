@@ -49,7 +49,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "22. Biggest Table Row", "22
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "23. PIN Validation", "23. PIN Validation\23. PIN Validation.csproj", "{4DA5A583-38CA-4DF7-83E1-38E8EC168272}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "24. Chat Logger", "24. Chat Logger\24. Chat Logger.csproj", "{876AD1A3-C6E7-45E2-89DA-AADBF2B7BBEB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "24. Chat Logger", "24. Chat Logger\24. Chat Logger.csproj", "{876AD1A3-C6E7-45E2-89DA-AADBF2B7BBEB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "25. O, My Girl!", "25. O, My Girl!\25. O, My Girl!.csproj", "{060D7FAA-6D6C-43AF-87E0-0B30A6893F9F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -153,6 +155,10 @@ Global
 		{876AD1A3-C6E7-45E2-89DA-AADBF2B7BBEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{876AD1A3-C6E7-45E2-89DA-AADBF2B7BBEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{876AD1A3-C6E7-45E2-89DA-AADBF2B7BBEB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{060D7FAA-6D6C-43AF-87E0-0B30A6893F9F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{060D7FAA-6D6C-43AF-87E0-0B30A6893F9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{060D7FAA-6D6C-43AF-87E0-0B30A6893F9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{060D7FAA-6D6C-43AF-87E0-0B30A6893F9F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
