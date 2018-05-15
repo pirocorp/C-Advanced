@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace _27._AlgorithmicExercises
@@ -12,6 +13,38 @@ namespace _27._AlgorithmicExercises
             //CountConsecutiveDigits();
             //Calculator();
             //ConvertStringtoInteger();
+            //MultiplyIntegersInArray();
+        }
+
+        private static void MultiplyIntegersInArray()
+        {
+            var inputNumbers = Console.ReadLine()
+                .Split(new[] {" "}, StringSplitOptions.RemoveEmptyEntries)
+                .Select(int.Parse)
+                .ToArray();
+
+            var count = inputNumbers.Length;
+            var resultNumbers = new int[count];
+
+            for (var i = 0; i < count; i++)
+            {
+                var firstPart = inputNumbers
+                    .Take(i)
+                    .ToArray();
+
+                var secondParth = inputNumbers
+                    .Skip(i + 1)
+                    .Take(count - i - 1)
+                    .ToArray();
+
+                var numbers = new List<int>();
+                numbers.AddRange(firstPart);
+                numbers.AddRange(secondParth);
+
+                resultNumbers[i] = numbers.Aggregate((a, x) => a * x);
+            }
+
+            Console.WriteLine(string.Join(" ", resultNumbers));
         }
 
         private static void ConvertStringtoInteger()
