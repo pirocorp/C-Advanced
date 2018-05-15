@@ -14,6 +14,31 @@ namespace _27._AlgorithmicExercises
             //Calculator();
             //ConvertStringtoInteger();
             //MultiplyIntegersInArray();
+            //ReverseNumber();
+        }
+
+        private static void ReverseNumber()
+        {
+            var number = int.Parse(Console.ReadLine());
+            var digits = new Stack<int>();
+
+            while (number != 0)
+            {
+                var currentDigit = number % 10;
+                number /= 10;
+                digits.Push(currentDigit);
+            }
+
+            var multiplier = 1;
+            var result = 0;
+
+            while (digits.Count > 0)
+            {
+                result += multiplier * digits.Pop();
+                multiplier *= 10;
+            }
+
+            Console.WriteLine(result);
         }
 
         private static void MultiplyIntegersInArray()
