@@ -61,6 +61,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "28. Regeh", "28. Regeh\28. 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "29. Knight Game", "29. Knight Game\29. Knight Game.csproj", "{9EF1DD59-EE0C-4C89-8AC2-A56AFC9B38F6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "30. Number Wars", "30. Number Wars\30. Number Wars.csproj", "{39E3317E-B1B9-4CD5-B7DB-32BF7A2B4B30}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -183,6 +185,10 @@ Global
 		{9EF1DD59-EE0C-4C89-8AC2-A56AFC9B38F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9EF1DD59-EE0C-4C89-8AC2-A56AFC9B38F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9EF1DD59-EE0C-4C89-8AC2-A56AFC9B38F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39E3317E-B1B9-4CD5-B7DB-32BF7A2B4B30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39E3317E-B1B9-4CD5-B7DB-32BF7A2B4B30}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39E3317E-B1B9-4CD5-B7DB-32BF7A2B4B30}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39E3317E-B1B9-4CD5-B7DB-32BF7A2B4B30}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
