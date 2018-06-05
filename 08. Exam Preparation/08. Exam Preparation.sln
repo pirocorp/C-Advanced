@@ -65,7 +65,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "30. Number Wars", "30. Numb
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "31. Hospital", "31. Hospital\31. Hospital.csproj", "{0816B7D7-16AF-4B23-92AA-74C86B5850B1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "32. Dangerous Floor", "32. Dangerous Floor\32. Dangerous Floor.csproj", "{7122CB1B-7A65-41B5-83C4-B6B59B19F797}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "32. Dangerous Floor", "32. Dangerous Floor\32. Dangerous Floor.csproj", "{7122CB1B-7A65-41B5-83C4-B6B59B19F797}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "33. Crypto Master", "33. Crypto Master\33. Crypto Master.csproj", "{98AAA34B-CAEE-46A9-BEC5-834B499246E0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -201,6 +203,10 @@ Global
 		{7122CB1B-7A65-41B5-83C4-B6B59B19F797}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7122CB1B-7A65-41B5-83C4-B6B59B19F797}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7122CB1B-7A65-41B5-83C4-B6B59B19F797}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98AAA34B-CAEE-46A9-BEC5-834B499246E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98AAA34B-CAEE-46A9-BEC5-834B499246E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98AAA34B-CAEE-46A9-BEC5-834B499246E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98AAA34B-CAEE-46A9-BEC5-834B499246E0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
