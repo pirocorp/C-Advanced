@@ -1,8 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace _36._Crossroads
+﻿namespace _36._Crossroads
 {
+    using System;
+    using System.Collections.Generic;
+
     public class Crossroads
     {
         private static int carsPassedCount = 0;
