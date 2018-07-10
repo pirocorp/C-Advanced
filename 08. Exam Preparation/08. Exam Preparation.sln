@@ -71,9 +71,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "33. Crypto Master", "33. Cr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "34. Greedy Times", "34. Greedy Times\34. Greedy Times.csproj", "{AAC160B1-DCAA-496A-921E-7630AAFFD557}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "35. Treasure Map", "35. Treasure Map\35. Treasure Map.csproj", "{1C9E4653-6E1A-43A0-BF26-DED877E354AD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "35. Treasure Map", "35. Treasure Map\35. Treasure Map.csproj", "{1C9E4653-6E1A-43A0-BF26-DED877E354AD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "36. Crossroads", "36. Crossroads\36. Crossroads.csproj", "{0AD52889-19E0-438C-A4B1-68A9E7078D5B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "36. Crossroads", "36. Crossroads\36. Crossroads.csproj", "{0AD52889-19E0-438C-A4B1-68A9E7078D5B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "37. Ticket Trouble", "37. Ticket Trouble\37. Ticket Trouble.csproj", "{CE8268DA-2668-41CF-8E60-8E7AEDEFB82A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "37. Ticket Trouble Alternative", "37. Ticket Trouble Alternative\37. Ticket Trouble Alternative.csproj", "{AFCC2539-9C45-4701-98EB-C7255CAA2D09}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -225,6 +229,14 @@ Global
 		{0AD52889-19E0-438C-A4B1-68A9E7078D5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0AD52889-19E0-438C-A4B1-68A9E7078D5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0AD52889-19E0-438C-A4B1-68A9E7078D5B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE8268DA-2668-41CF-8E60-8E7AEDEFB82A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE8268DA-2668-41CF-8E60-8E7AEDEFB82A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE8268DA-2668-41CF-8E60-8E7AEDEFB82A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE8268DA-2668-41CF-8E60-8E7AEDEFB82A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AFCC2539-9C45-4701-98EB-C7255CAA2D09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFCC2539-9C45-4701-98EB-C7255CAA2D09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFCC2539-9C45-4701-98EB-C7255CAA2D09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFCC2539-9C45-4701-98EB-C7255CAA2D09}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
