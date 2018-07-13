@@ -23,7 +23,7 @@
             }
 
             var moviesToOffer = movieList
-                .Where(m => m.Genre == favoriteMovieGenre)
+                .Where(m => m.Genre== favoriteMovieGenre)
                 .ToList();
 
             if (favoriteDuration == "long")

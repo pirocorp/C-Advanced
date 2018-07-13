@@ -11,9 +11,9 @@
             Seconds = seconds;
         }
 
-        public long Hours { get; set; }
-        public long Minutes { get; set; }
-        public long Seconds { get; set; }
+        public long Hours { get; private set; }
+        public long Minutes { get; private set; }
+        public long Seconds { get; private set; }
 
         public long TotalDurationInSeconds
         {
