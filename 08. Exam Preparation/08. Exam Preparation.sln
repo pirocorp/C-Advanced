@@ -89,6 +89,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "41. Crypto Blockchain", "41
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "41. Crypto Blockchain Althernative(.net framework)", "41. Crypto Blockchain Althernative(.net framework)\41. Crypto Blockchain Althernative(.net framework).csproj", "{0C6378F9-B5CD-41B9-BE8C-3AB98D167114}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "42. Hit List", "42. Hit List\42. Hit List.csproj", "{0AEA7552-D4E1-43A7-82D0-794DC680C351}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -267,6 +269,10 @@ Global
 		{0C6378F9-B5CD-41B9-BE8C-3AB98D167114}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0C6378F9-B5CD-41B9-BE8C-3AB98D167114}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0C6378F9-B5CD-41B9-BE8C-3AB98D167114}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0AEA7552-D4E1-43A7-82D0-794DC680C351}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0AEA7552-D4E1-43A7-82D0-794DC680C351}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0AEA7552-D4E1-43A7-82D0-794DC680C351}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0AEA7552-D4E1-43A7-82D0-794DC680C351}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
