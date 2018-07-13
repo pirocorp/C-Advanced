@@ -1,18 +1,15 @@
-﻿namespace _41._Crypto_Blockchain
+﻿namespace _41.Crypto_Blockchain_Althernative_.net_framework_
 {
     using System;
-    using System.Text;
     using System.Linq;
+    using System.Text;
     using System.Text.RegularExpressions;
-    using System.Collections.Generic;
-
 
     public class CryptoBlockchain
     {
         public static void Main()
         {
             const string cryptoBlockPattern = @"(?:(?<bracket>{)|\[)[^0-9]*(?<digits>\d*)[^0-9]*(?(bracket)}|\])";
-            const string digitsPattern = "\\d{3,}";
             const string threesPattern = @"\d{3}";
 
             var n = int.Parse(Console.ReadLine());
@@ -22,51 +19,32 @@
             for (var i = 0; i < n; i++)
             {
                 var currentInput = Console.ReadLine();
-
                 sb.Append(currentInput);
             }
 
-            var cryptoMatchCollection = Regex.Matches(sb.ToString(), cryptoBlockPattern);
-            var cryptoBlocks = new List<string>();
-
-            foreach (Match match in cryptoMatchCollection)
-            {
-                cryptoBlocks.Add(match.Value);
-            }
+            var matches = Regex.Matches(sb.ToString(), cryptoBlockPattern);
 
             var result = new StringBuilder();
 
-            for (var blockIndex = 0; blockIndex < cryptoBlocks.Count; blockIndex++)
+            for (var blockIndex = 0; blockIndex < matches.Count; blockIndex++)
             {
-                var currentBlock = cryptoBlocks[blockIndex];
-                var digitsInBlock = new List<string>();
+                var currentMatch = matches[blockIndex];
 
-                var digitsInBlockMatchCollection = Regex.Matches(currentBlock, digitsPattern);
+                var currentDigits = currentMatch.Groups["digits"].Value;
+                var currentBlockLenght = currentMatch.Value.Length;
 
-                foreach (Match match in digitsInBlockMatchCollection)
+                if (currentDigits.Length % 3 == 0)
                 {
-                    digitsInBlock.Add(match.Value);
+                    var threes = Regex.Matches(currentDigits, threesPattern)
+                        .Cast<Match>()
+                        .Select(m => m.Value)
+                        .Select(int.Parse)
+                        .Select(x => x -= currentBlockLenght)
+                        .Select(x => (char)x)
+                        .ToArray();
+
+                    result.Append(threes);
                 }
-
-                var threes = digitsInBlock
-                    .SelectMany(d =>
-                    {
-                        var threesMatches = Regex.Matches(d, threesPattern);
-                        var threesSegmentList = new List<string>();
-
-                        foreach (Match match in threesMatches)
-                        {
-                            threesSegmentList.Add(match.Value);
-                        }
-
-                        return threesSegmentList;
-                    })
-                    .Select(int.Parse)
-                    .Select(d => d -= currentBlock.Length)
-                    .Select(d => (char)d)
-                    .ToArray();
-
-                result.Append(threes);
             }
 
             Console.WriteLine(result);
