@@ -14,21 +14,17 @@
         public long Hours { get; private set; }
         public long Minutes { get; private set; }
         public long Seconds { get; private set; }
-
-        public long TotalDurationInSeconds
-        {
-            get { return (Hours * 60 + Minutes) * 60 + Seconds; }
-        }
+        public long TotalDurationInSeconds => (Hours * 60 + Minutes) * 60 + Seconds;
 
         public void AddDuration(long hours, long minutes, long seconds)
         {
-            var minToAdd = (this.Seconds + seconds) / 60;
-            this.Seconds = (this.Seconds + seconds) % 60;
+            var minToAdd = (Seconds + seconds) / 60;
+            Seconds = (Seconds + seconds) % 60;
 
-            var hoursToAdd = (this.Minutes + minutes + minToAdd) / 60;
-            this.Minutes = (this.Minutes + minutes + minToAdd) % 60;
+            var hoursToAdd = (Minutes + minutes + minToAdd) / 60;
+            Minutes = (Minutes + minutes + minToAdd) % 60;
 
-            this.Hours += hoursToAdd + hours;
+            Hours += hoursToAdd + hours;
         }
 
         public static Duration ParseDuration(string input)

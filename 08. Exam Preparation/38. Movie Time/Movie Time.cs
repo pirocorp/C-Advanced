@@ -52,8 +52,10 @@
 
             Console.WriteLine(moviesToOffer[index].Name);
             Console.WriteLine($"We're watching {moviesToOffer[index].Name} - {moviesToOffer[index].Duration}");
+
             var totalPlayListTime = new Duration();
             totalPlayListTime.AddDuration(0, 0, movieList.Sum(m => m.Duration.TotalDurationInSeconds));
+
             Console.WriteLine($"Total Playlist Duration: {totalPlayListTime}");
         }
     }

@@ -11,9 +11,9 @@
             Duration = duration;
         }
 
-        public string Name { get; private set ; }
-        public string Genre { get; private set ; }
-        public Duration Duration { get; private set ; }
+        public string Name { get; }
+        public string Genre { get; }
+        public Duration Duration { get; }
 
         public static Movie ParseMovie(string input)
         {
