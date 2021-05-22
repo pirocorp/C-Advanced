@@ -15,6 +15,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05. Count Symbols", "05. Co
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06. Wardrobe", "06. Wardrobe\06. Wardrobe.csproj", "{A590496A-442C-47BC-989B-C64420BD3F2A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07. The V-Logger", "07. The V-Logger\07. The V-Logger.csproj", "{38CCF554-A557-41BB-A1ED-E25756072AAE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08. Ranking", "08. Ranking\08. Ranking.csproj", "{2B772409-8407-4B97-A10F-F2F4F3E78FC7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +49,14 @@ Global
 		{A590496A-442C-47BC-989B-C64420BD3F2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A590496A-442C-47BC-989B-C64420BD3F2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A590496A-442C-47BC-989B-C64420BD3F2A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38CCF554-A557-41BB-A1ED-E25756072AAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38CCF554-A557-41BB-A1ED-E25756072AAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38CCF554-A557-41BB-A1ED-E25756072AAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38CCF554-A557-41BB-A1ED-E25756072AAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B772409-8407-4B97-A10F-F2F4F3E78FC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B772409-8407-4B97-A10F-F2F4F3E78FC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B772409-8407-4B97-A10F-F2F4F3E78FC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B772409-8407-4B97-A10F-F2F4F3E78FC7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
